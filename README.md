@@ -8,15 +8,13 @@ Open an existing EOS Smart Contract repo created using the [VSCode New EOS Contr
 # How to use
 1. Clone this repo **into a new directory with the name of your project** (Directory naming restrictions: ```[a-zA-Z0-9][a-zA-Z0-9_.-]```)
 2. Open in VSCode
-3. Create a `.devcontainer/.secret` folder and inside create `accounts.env` file of the form
+3. _OPTIONAL_: Create a `.devcontainer/.dev-eos-keys/accounts.env` file of the form
 ```bash
 wax_mydevaccount=<PK>
 jungle_mydevaccount=<PK>
 # ... any other test account_desc=private_pk pairs
 ```
 Add as many test accounts along with their keys. Note that, only the <PK> part is important, names are only for you to keep track which key is which.
-
-**NOTE**: The `.secret` folder is included in your `.gitignore` and thus your `accounts.env` file will not be pushed to your repo. Be careful not to remove it from `.gitignore` accidentally.
 
 4. Modify the .devcontainer file according to the instructions at the top of the file (Insert the target github account and repository name)
 5. Run the ```Remote-Containers: Rebuild and Reopen in Container``` command in VSCode

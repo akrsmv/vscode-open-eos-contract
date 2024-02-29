@@ -33,5 +33,5 @@ RUN make -j $(nproc)
 
 # prepare an unlocked dev wallet with imported dev account keys 
 COPY wallet-logging-confing.json /root/wallet-logging-confing.json
-COPY .secret/accounts.env /root/accounts.env
 COPY setup-wallet.sh /root/setup-wallet.sh
+COPY .dev-eos-keys/ /root/.dev-eos-keys/

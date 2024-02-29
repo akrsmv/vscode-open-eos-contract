@@ -4,7 +4,7 @@
     // GITHUB_ACCOUNT is the account at which the repo is saved, e.g. "EOSPowerNetwork"
     // REPOSITORY_NAME is the name of the actual repo, e.g. "vscode-open-eos-contract"
     "build": { "args": { 
-        "GITHUB_ACCOUNT": "PUT-GITHUB-ACCOUNT-HERE",
+        "GITHUB_ACCOUNT": "EOSPowerNetwork",//"PUT-GITHUB-ACCOUNT-HERE",
         "REPOSITORY_NAME": "${localWorkspaceFolderBasename}" // if you named the base folder as per README instructions you don't need to modify
     }},
 
@@ -19,7 +19,7 @@
     "mounts": ["source=${localWorkspaceFolder}/artifacts,target=/root/eos/build/artifacts,type=bind"],
     "dockerFile": "./Dockerfile",
     "workspaceFolder": "/root/eos",
-    "postStartCommand": "/bin/bash /root/setup-wallet.sh /root/accounts.env",
+    "postStartCommand": "/bin/bash /root/setup-wallet.sh /root/.dev-eos-keys/accounts.env",
 
     // Standard EOS Smart contract development extensions
     "extensions": [
