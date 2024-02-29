@@ -5,7 +5,7 @@
     // REPOSITORY_NAME is the name of the actual repo, e.g. "vscode-open-eos-contract"
     "build": { "args": { 
         "GITHUB_ACCOUNT": "PUT-GITHUB-ACCOUNT-HERE",
-        "REPOSITORY_NAME": "${localWorkspaceFolderBasename}" // if you named the base folder as per README instructions you don't need to modify
+        "REPOSITORY_NAME": "PUT-REPOSITORY-NAME-HERE"
     }},
 
     ///////////////////////////////////////
