@@ -14,7 +14,7 @@ wax_mydevaccount=<PK>
 jungle_mydevaccount=<PK>
 # ... any other test account_desc=private_pk pairs
 ```
-Add as many test accounts along with their keys. Note that, only the <PK> part is important, names are only for you to keep track which key is which.
+Add as many test accounts along with their keys. Note that, only the `<PK>` part is important, names are only for you to keep track which key is which.
 
 4. Modify the .devcontainer file according to the instructions at the top of the file (Insert the target github account and repository name)
 5. Run the ```Remote-Containers: Rebuild and Reopen in Container``` command in VSCode
